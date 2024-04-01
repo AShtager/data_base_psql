@@ -1,11 +1,11 @@
-# добавим название жанров
+-- добавим название жанров
 INSERT INTO genre (name)
 VALUES 
 	('Rock'),
 	('Rap'),
 	('Pop');
 
-# добавим исполнителей
+-- добавим исполнителей
 INSERT INTO performer (name)
 VALUES
 	('Linkin park'),
@@ -13,7 +13,7 @@ VALUES
 	('50 Cent'),
 	('Michael Jackson');
 
-# добавим связь жанр\исполнитель
+-- добавим связь жанр\исполнитель
 INSERT INTO artist_genre (genre_id, performer_id)
 VALUES
 	(1, 1),
@@ -21,21 +21,21 @@ VALUES
 	(2, 3),
 	(3, 4);
 
-# добавим альбомы
+-- добавим альбомы
 INSERT INTO album (name, year_of_issue) 
 VALUES 
 	('Meteora', '2003-03-25'),
 	('Strictly 4 My N.I.G.G.A.Z.', '1993-02-16'),
 	('Get Rich or Die Tryin', '2003-02-6');
 
-# добавим связь альбом\исполнитель
+-- добавим связь альбом\исполнитель
 INSERT INTO album_artist (album_id, performer_id)
 VALUES
 	(1, 1),
 	(2, 2), 
 	(3, 3);
 
-# добавим треки, связь альбом\название трека, длительность в секундах 
+-- добавим треки, связь альбом\название трека, длительность в секундах 
 INSERT INTO track (album_id, name, duration_sec)
 VALUES
 	(1, 'Somewhere I Belong', 188),
@@ -51,9 +51,10 @@ VALUES
 	(3, 'Many Men', 256),
 	(3, 'In da Club', 193),
 	(3, 'High All the Time', 269),
-	(3, 'Heat', 254);
+	(3, 'Heat', 254)
+	(3, 'Like My Style', 193);
 
-#	добавим сборники
+--	добавим сборники
 INSERT INTO compilation (name, year_of_issue)
 VALUES
 	('Бездна 1', '2017-07-18'),
@@ -61,7 +62,7 @@ VALUES
 	('Бездна 3', '2019-03-15'),
 	('Бездна 4', '2021-10-02');
 
-# добавим связь сборник\ трек
+-- добавим связь сборник\ трек
 INSERT INTO compilation_tracks (compilation_id, track_id)
 VALUES
 	(1, 1),
