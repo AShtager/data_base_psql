@@ -24,9 +24,9 @@ VALUES
 -- добавим альбомы
 INSERT INTO album (name, year_of_issue) 
 VALUES 
-	('Meteora', '2003-03-25'),
+	('Meteora', '2019-03-25'),
 	('Strictly 4 My N.I.G.G.A.Z.', '1993-02-16'),
-	('Get Rich or Die Tryin', '2003-02-6');
+	('Get Rich or Die Tryin', '2020-02-6');
 
 -- добавим связь альбом\исполнитель
 INSERT INTO album_artist (album_id, performer_id)
